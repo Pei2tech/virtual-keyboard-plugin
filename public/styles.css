@@ -3,7 +3,7 @@
     @Author Stephen31
 */
 
-.keyboard-container {
+.container.keyboard-container {
     position: absolute;
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 14px;
@@ -16,7 +16,7 @@
     visibility: hidden;
 }
 
-.keyboard-container.visible {
+.container.keyboard-container.visible {
     visibility: visible;
 }
 

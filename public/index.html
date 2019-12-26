@@ -7,9 +7,16 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Virtual Keyboard</title>
   <link rel="stylesheet" href="../dist/virtual-keyboard.css">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href='../dist/bulma.css' rel='stylesheet' type='text/css' />
+  <link href='./index.css' rel='stylesheet' type='text/css' />
+  <!-- <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script> -->
   <script src="../dist/virtual-keyboard.min.js"></script>
-  <script>
+  <!-- test ispin below -->
+  <link href="https://unpkg.com/ispin/dist/ispin.css" rel="stylesheet">
+  <script src="https://unpkg.com/ispin"></script>
+  <!-- <script>
     document.addEventListener('DOMContentLoaded', () => {
       let element = document.querySelector('#monId2');
       
@@ -34,20 +41,131 @@
         console.log(event);
       })
     });
-  </script>
+  </script> -->
+
 </head>
 
 <body>
-  <div class="container">
-<!--    <input id="monId" type="text" virtual-keyboard>-->
-    <textarea name="" id="monId1" cols="30" rows="10" virtual-keyboard></textarea>
-    <div class="virtual-keyboard-hook" data-target-id="monId1" data-keyboard-mapping="azerty"><i class="fa fa-keyboard-o" aria-hidden="true"></i></div>
-<!--    <textarea name="" id="monId1" cols="30" rows="10" virtual-keyboard></textarea>-->
-<!--    <div class="virtual-keyboard-hook" data-target-id="monId1" data-keyboard-mapping="azerty"><i class="fa fa-keyboard-o" aria-hidden="true"></i></div>-->
+  <nav class="navbar " role="navigation" aria-label="main navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://bulma.io">
+          <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+        </a>
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+          data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
 
-    <textarea name="" id="monId2" cols="30" rows="10" virtual-keyboard></textarea>
-    <div class="virtual-keyboard-hook" data-target-id="monId2" data-keyboard-mapping="qwerty"><i class="fa fa-keyboard-o" aria-hidden="true"></i></div>
-  </div>
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start ">
+          <div class="navbar-item navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link ">
+              Question Type
+            </a>
+            <div class="navbar-dropdown">
+              <a class="navbar-item">
+                下載練習題
+              </a>
+              <a class="navbar-item">
+                下載測驗題
+              </a>
+            </div>
+          </div>
+
+          <a class="navbar-item">
+            Examation
+          </a>
+
+
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link"><i class="fa fa-download"></i>
+              &nbsp;Download
+            </a>
+          </div>
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-primary">
+                <strong>Sign up</strong>
+              </a>
+              <a class="button is-light">
+                Log in
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- <div class="container"> -->
+  <div class="container is-fluid">
+    <!-- <p class="notification"> </p> -->
+    
+    <div class="columns">
+    <div class="column"> </div>
+    
+    <div class="column">
+      <!-- <p class="notification is-info "> -->
+      <div>
+        <div class="field is-grouped">
+          <p class="Title is-large">中 文:</p>
+           <!-- <div class="control in-line"> -->
+          <p class="label " type="text" readonly> </p>
+          <!-- </div> -->
+        </div>
+        <!-- <p class="control is-expanded"> -->
+        <lable class="label">第一音節</lable>
+        <input class="input is-small is-info m-r-5 box1" style="width: 80%;" placeholder="結構 / 類型">
+        <input class="input is-small is-info m-r-5 box1" id="monId1" type="text" style="width: 80%;"placeholder="記 音" virtual-keyboard>
+        <!-- </p> -->
+        <!-- <textarea name="" id="monId1" cols="10" rows="10" virtual-keyboard></textarea> -->
+        <div class="virtual-keyboard-hook box1" data-target-id="monId1" data-keyboard-mapping="azerty">
+          <!-- <p class="control"> -->
+          <!-- <span class="icon is-small">&ensp; -->
+          <i class="fa fa-keyboard-o"></i>
+          <!-- </span> -->
+          <!-- </p>             -->
+        </div>
+      </div>
+      <!--    <textarea name="" id="monId1" cols="30" rows="10" virtual-keyboard></textarea>-->
+      <!--    <div class="virtual-keyboard-hook" data-target-id="monId1" data-keyboard-mapping="azerty"><i class="fa fa-keyboard-o" aria-hidden="true"></i></div>-->
+      <!-- </p> -->
+      <div>
+        <lable class="label">第二音節</lable>
+        <!-- <div class="column has-background-success"> -->
+        <!-- <textarea name="" id="monId2" cols="30" rows="10" virtual-keyboard></textarea> -->
+        <input class="input is-small m-r-5 box1" style="width: 80%;" placeholder="結構 / 類型">
+        <input class="input is-small m-r-5 box1" id="monId2" type="text" style="width: 80%" placeholder="記 音" virtual-keyboard>
+        <div class="virtual-keyboard-hook box1" data-target-id="monId2" data-keyboard-mapping="qwerty"><i
+            class="fa fa-keyboard-o" aria-hidden="true"></i></div>
+      </div>
+      <div>
+          <lable class="label">第三音節</lable>          
+         
+          <input class="input is-small m-r-5 box1" style="width: 80%;" placeholder="結構 / 類型">         
+          <input class="input is-small m-r-5 box1" id="monId3" type="text" style="width: 80%" virtual-keyboard>
+          <div class="virtual-keyboard-hook box1" data-target-id="monId3" data-keyboard-mapping="qwerty"><i
+              class="fa fa-keyboard-o" aria-hidden="true"></i></div>
+      </div>
+      <!-- <div class="field has-addons">
+              <input class="input is-small" name="address" type="text" value="Address">
+              <p class="control">
+                <span class="icon is-small m-r-5"><i class="fa fa-map-marker fa-fw"></i></span>
+              </p>
+            </div> -->
+
+      </div>
+      <div class="column"> 
+          <input class="input" id="number-input" type="text" value="">
+      </div>  
+    </div> 
+    <script src="./index.js"></script>
 </body>
 
 </html>

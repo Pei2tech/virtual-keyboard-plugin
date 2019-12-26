@@ -3,11 +3,11 @@
     @Author Stephen31
 */
 
-.keyboard-container {
+.container.keyboard-container {
     position: absolute;
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 14px;
-    width: 750px;
+    width: 385px;
     height: auto;
     justify-content: space-around;
     padding: 8px;
@@ -16,7 +16,7 @@
     visibility: hidden;
 }
 
-.keyboard-container.visible {
+.container.keyboard-container.visible {
     visibility: visible;
 }
 

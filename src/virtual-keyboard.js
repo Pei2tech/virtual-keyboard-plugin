@@ -245,7 +245,8 @@ export default class VirtualKeyboard {
     const keys = [];
     for (let i = 0, j = from; i < to; i += 1, j += 1) {
       keys[i] = document.createElement('div');
-      keys[i].classList.add('key');
+      keys[i].classList.add('key');      
+      // keys[i].classList.add('button');
       if (mappingArray[j].class) {
         keys[i].classList.add(mappingArray[j].class);
       }
@@ -300,6 +301,8 @@ export default class VirtualKeyboard {
    */
   initKeyboardContainer() {
     this.keyboardContainer = document.createElement('div');
+    //12/19 add class container 
+    this.keyboardContainer.classList.add('container');
     this.keyboardContainer.classList.add('keyboard-container');
     this.keyboardContainer.appendChild(this.actionsContainer);
   }
