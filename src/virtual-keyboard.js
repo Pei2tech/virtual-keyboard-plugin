@@ -314,7 +314,8 @@ export default class VirtualKeyboard {
     this.actionsContainer = document.createElement('div');
     this.actionsContainer.classList.add('actions-container');
     this.actionsContainer.innerHTML =
-      '<span class="close-button"><i class="fa fa-times" aria-hidden="true"></i></span>';
+      //2020/01/04 '<span class="close-button"><i class="fa fa-times" aria-hidden="true"></i></span>';     
+      '<button class="delete is-small close-button"></button>';
   }
 
   /**
