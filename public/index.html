@@ -13,6 +13,10 @@
   <link href='./index.css' rel='stylesheet' type='text/css' />
   <!-- <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script> -->
   <script src="../dist/virtual-keyboard.min.js"></script>
+  <!-- <script src="../src/azerty-mapping.js"></script>
+  <script src="../src/qwerty-mapping.js"></script>
+  <script  src="../src/virtual-keyboard.js"></script> -->
+  
   <!-- test ispin below -->
   <!-- <link href="https://unpkg.com/ispin/dist/ispin.css" rel="stylesheet"> -->
   <!-- <script src="https://unpkg.com/ispin"></script> -->
@@ -149,7 +153,7 @@
         <!-- <textarea name="" id="monId2" cols="30" rows="10" virtual-keyboard></textarea> -->
         <input class="input is-small is-info m-r-5 box1" style="width: 50%;" placeholder="結構 / 類型">
         <input class="input is-small is-info m-r-5 box1" id="monId2" type="text" style="width: 50%" placeholder="記 音" virtual-keyboard>
-        <div class="virtual-keyboard-hook box1" data-target-id="monId2" data-keyboard-mapping="qwerty"><i
+        <div class="virtual-keyboard-hook box1" data-target-id="monId2" data-keyboard-mapping="azerty"><i
             class="fa fa-keyboard-o" aria-hidden="true"></i></div>
       </fieldset>
       <!-- <hr> -->
@@ -159,7 +163,7 @@
           <input class="input is-small is-info m-r-5 box1" style="width: 50%;" placeholder="結構 / 類型">         
           <!-- </p> -->
           <input class="input is-small is-info m-r-5 box1" id="monId3" type="text" style="width: 50%" placeholder="記 音" virtual-keyboard>
-          <div class="virtual-keyboard-hook box1" data-target-id="monId3" data-keyboard-mapping="qwerty"><i
+          <div class="virtual-keyboard-hook box1" data-target-id="monId3" data-keyboard-mapping="azerty"><i
               class="fa fa-keyboard-o" aria-hidden="true"></i></div>
       </fieldset>
       <!-- <div class="field has-addons">
@@ -169,107 +173,7 @@
               </p>
             </div> -->
      <!-- </div>  card end -->
-    </div> <!-- second ccolumn end -->
-    <div class="column "> 
-     <!-- <p class="notification is-info "> </p> -->
-      <fieldset class="content has-text-left"> 
-        <legend class="label has-text-left">作 答</legend>
-        <div class="field is-grouped">
-            <!-- <div class="field-label is-normal"> -->
-          <p class="control">     
-            <label class="label">題目間隔 (sec):</label>
-          </p>   
-            <!-- </div> -->
-          <!-- <p class="control">  -->
-            <input class="input is-small" id="second-input" type="number" min="1" value="">
-          <!-- </p>    -->
-        </div>  
-        <div class="field is-grouped">
-            <!-- <div class="field-label is-normal"> -->
-            <p class="control">
-            <!-- <p class="control is-expanded">  -->
-              <label class="label">答題數目 : </label>
-            </p>  
-            <!-- </div> -->
-            <!-- <p class="control"> -->
-              <input class="input is-small" id="number-input" type="number" min="1" value="">
-            <!-- </p> -->
-
-        </div> 
-        <div class="field is-grouped">
-          <p class="control">
-            <input class = "button is-info is-small" id = "goContinue" type="submit" value="連續作答"> 
-          </p>
-          <p class="control">  
-            <input class = "button is-info is-small" id = "nextOne" type="submit" value="下一題"> 
-          </p> 
-        </div>
-      </fieldset>
-      <progress class="progress is-info" value="15" max="100">15%</progress>    
-         <!-- <div class="field is-grouped"> -->
-      <fieldset class="content has-text-left"> 
-        <legend class="label has-text-left">比 對</legend>
-          <div class="field">
-            <label class="checkbox" style="font-weight: bold;">
-                <input type="checkbox" >
-                顯示連續作答內容
-            </label>
-          </div>
-          
-          <div class="field is-horizontal is-grouped">                     
-              <button class = "button is-info is-small">單題比對</button> &nbsp 
-              <!-- <input class="input is-small" id="compare-input" type="text" value="">  -->
-              <input class="input is-small" id="compare-input" type="number" min="1" value="" placeholder="題 號">   
-          </div>    
-      </fieldset>
-    </div> <!--column--> 
-      <!-- </div>     -->
-
-     <!-- </p>  -->
-      <!-- <div class="field-body">
-            <div class="field">
-              <p class="control">
-                <label class="label">Short Label</label>
-                <input type="text" name="" value="123" class="input ">             
-              </p>
-            </div>
-            <div class="field-label is-normal">
-                <label class="label">From</label>
-            </div>
-            <div class="field ">
-              <p class="control is-expanded">
-                <label class="label">&nbsp</label>
-                <span class="label">this </span>
-              </p>
-            </div>
-      </div>
-      <div class="field is-horizontal">
-          
-          <div class="field-body">
-            <div class="field">
-              <p class="control is-expanded has-icons-left">
-                <input class="input" type="text" placeholder="Name">
-                <span class="icon is-small is-left">
-                  <i class="fas fa-user"></i>
-                </span>
-              </p>
-            </div>
-            <div class="field-label is-normal">
-                <label class="label">From</label>
-            </div>
-            <div class="field">
-              <p class="control is-expanded has-icons-left has-icons-right">
-                <input class="input is-success" type="email" placeholder="Email" value="alex@smith.com">
-                <span class="icon is-small is-left">
-                  <i class="fas fa-envelope"></i>
-                </span>
-                <span class="icon is-small is-right">
-                  <i class="fas fa-check"></i>
-                </span>
-              </p>
-            </div>
-          </div>
-        </div> -->
+    </div> <!-- second ccolumn end -->    
        
     </div> <!-- columns end-->
             
